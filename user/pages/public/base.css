@@ -1,0 +1,271 @@
+/* common */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    line-height: inherit;
+    color: #000;
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(/shopacc.net/user/access/font/familyFont/Oswald-VariableFont_wght.ttf);
+}
+
+html {
+    word-spacing: 1px;
+    font-family: Oswald;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+#main {
+    position: relative;
+    
+}
+
+/* footer */
+#main-footer {
+    background-color: #1b1a1a;
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#main-footer h2,
+#main-footer h4,
+#main-footer p {
+    color: #fff;
+}
+
+#main-footer .footer-box {
+    width: 33.3333333%;
+    margin: 1.5rem 4.5rem;
+    border-width: 2px 2px 2px 2px;
+    border-style: solid;
+    border-color: #ED5565;
+    text-align: center;
+}
+
+.footer-box img{
+    margin-top: -5.5rem;
+    width: 60%;
+    height: 50%;
+}
+
+.footer-box h4 {
+    margin-top: -4rem;
+    margin-bottom: 1rem;
+}
+
+
+.footer-about {
+    width: 22%;
+}
+
+.footer-contact {
+    width: 20%;
+    margin: 0 4.5rem;
+}
+
+/* begin header responsive */
+.header-mobi{
+    display: none;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: #333;
+    z-index: 9999;
+}
+
+.header-content-mobi{
+   position: fixed;
+   padding: 12px;
+   font-size: 20px;
+   margin-top: 12px;
+
+}
+.text-content{
+    color: #fff;
+}
+.header-menu-mobi i{
+    color: #fff;
+    cursor: pointer;
+} 
+
+.header-menu-mobi{
+    position: fixed;
+    right: 12px;
+    padding: 12px;
+    margin-top: 12px;
+}
+.open-list-menu{
+    display: none;
+}
+.open-menu{
+    display: block;
+}
+.list-menu{
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding-top: 60px;
+    overflow: hidden;
+}
+.list-menu li{
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    
+}
+.list-menu li:hover{
+    background-color: #ccc;
+}
+.list-menu li a{
+    color: #fff;
+}
+/* end header responsive  */
+
+/* responsive  */
+@media only screen and (max-width:739px) {
+
+    #main-header{
+        display: none;
+    }  
+    .header-mobi{
+        display: block;
+    }  
+    
+
+.header-scroll{
+    display: none;
+}
+#main-slider{
+    display: none;
+}
+
+.slider-show {
+    max-height: 40px;
+}
+
+#main-content h2 {
+    width: 100%;
+    text-align: center;
+    padding-top: 60px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.list-acc{
+    display: block;
+    width: 100%;
+}
+.acc-info{
+    width: 90%;
+}
+
+
+
+#main-footer {
+    width: 100%;
+    display: block;
+    border-style: solid;
+    border-color: #ED5565;
+    text-align: left;
+    justify-content: center;
+    padding: 12px;
+}
+
+.footer-box{
+    display: none;
+}
+
+.footer-about{
+    width: 100%;
+    height: auto;
+}
+
+.footer-contact{
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    margin: 12px 0 0 0;
+}
+
+
+@media only screen and (min-width:739px ) and (max-width:1024px){
+
+    #main-header{
+        display: none;
+    }
+    .header-scroll{
+        display: none;
+    }
+    .header-mobi{
+        display: block;
+       
+    }
+    #main-slider{
+        height: auto;
+    }
+    .slider-show{
+        height: auto;
+    }
+    .slides{
+        height: auto;
+    }
+    .slides input{
+        display: none;
+    }
+    .slide{
+        height: auto;
+    }
+    .text{
+        margin-top: 10%;
+        margin-left: 10%;
+        font-size: 240%;
+    }
+    .slide-btn{
+        padding-left: 10%;
+        height: 38vh;
+        font-size: 140%;
+    }
+
+    .list-acc{
+        display: flex;
+        width: 100%;
+    }
+    .col4{
+        width: 45%;
+    }
+
+    #main-footer {
+        width: 100%;
+        display: block;
+        border-style: solid;
+        border-color: #ED5565;
+        text-align: left;
+        justify-content: center;
+    }
+    
+    .footer-box{
+        display: none;
+    }
+    
+    .footer-about{
+        width: 100%;
+        margin:12px;
+    }
+    
+    .footer-contact{
+        width: 100%;
+        min-height: 100px;
+        margin: 12px;
+    }
+    
+
+    }
+}
